@@ -1,0 +1,83 @@
+{
+  "summary": {
+    "total_events": 80,
+    "accuracy": 0.75,
+    "macro_f1": 0.4583,
+    "adversarial_f1": 0.0,
+    "adversarial_precision": 0.0,
+    "adversarial_recall": 0.0,
+    "duration_seconds": 88.2
+  },
+  "per_class": {
+    "none": {
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1": 0.8333,
+      "support": 50
+    },
+    "adversarial": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "infra_failure": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "schema_drift": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    }
+  },
+  "confusion_matrix": {
+    "none": {
+      "none": 50,
+      "adversarial": 0,
+      "infra_failure": 0,
+      "schema_drift": 0
+    },
+    "adversarial": {
+      "none": 10,
+      "adversarial": 0,
+      "infra_failure": 0,
+      "schema_drift": 0
+    },
+    "infra_failure": {
+      "none": 10,
+      "adversarial": 0,
+      "infra_failure": 0,
+      "schema_drift": 0
+    },
+    "schema_drift": {
+      "none": 0,
+      "adversarial": 0,
+      "infra_failure": 0,
+      "schema_drift": 10
+    }
+  },
+  "baseline_comparison": {
+    "binary_gap_accuracy": 0.75,
+    "binary_gap_f1": 0.5,
+    "3class_vs_binary_f1_delta": -0.5
+  },
+  "label_distribution": {
+    "true": {
+      "none": 50,
+      "adversarial": 10,
+      "infra_failure": 10,
+      "schema_drift": 10
+    },
+    "predicted": {
+      "none": 70,
+      "adversarial": 0,
+      "infra_failure": 0,
+      "schema_drift": 10
+    }
+  },
+  "generated_at": "2026-05-05T19:49:34Z"
+}
